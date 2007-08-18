@@ -33,15 +33,10 @@ DESCRIPTION
 
     If Scalar::Util is not available at all, it will issue a normal
     dependency on the module. However, if Scalar::Util is relatively new (
-    it is >= 1.14 ) and the module does not have weaken, the install will
-    bail out altogether with a "platform does not support this module"
-    error.
-
-    This means that a distributor cannot just force the install, as there
-    will be no Makefile at all to do the installation phase.
-
-    This is to some degree lying, so it is somewhat debatable if this
-    strategy should continue, and may be removed later.
+    it is >= 1.19 ) and the module does not have weaken, the install will
+    bail out altogether with a long error encouraging the user to seek
+    support from their vendor (this problem happens most often in
+    vendor-packaged Perl versions).
 
     This distribution also contains tests to ensure that weaken is available
     using more normal methods.
@@ -49,16 +44,16 @@ DESCRIPTION
     So if your module uses "weaken", you can just add the following to your
     Module::Install-based Makefile.PL (or equivalent).
 
-      requires 'Task::Weaken';
+      requires 'Task::Weaken' => 0;
 
 AUTHOR
-    Adam Kennedy <cpan@ali.as>, <http://ali.as/>
+    Adam Kennedy <adamk@cpan.org>, <http://ali.as/>
 
 SEE ALSO
     Task, Scalar::Util, <http://ali.as/>
 
 COPYRIGHT
-    Copyright 2006 Adam Kennedy. All rights reserved.
+    Copyright 2006 - 2007 Adam Kennedy.
 
     This program is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
