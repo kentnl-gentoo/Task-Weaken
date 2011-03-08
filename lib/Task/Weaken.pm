@@ -5,7 +5,7 @@ use strict;
 
 use vars qw{$VERSION};
 BEGIN {
-	$VERSION = '1.03';
+	$VERSION = '1.04';
 }
 
 1;
@@ -52,7 +52,7 @@ To get around that for this module, it will do a few dirty tricks.
 
 If L<Scalar::Util> is not available at all, it will issue a normal
 dependency on the module. However, if L<Scalar::Util> is relatively
-new ( it is >= 1.19 ) and the module does B<not> have weaken, the
+new ( it is E<gt>= 1.19 ) and the module does B<not> have weaken, the
 install will bail out altogether with a long error encouraging the
 user to seek support from their vendor (this problem happens most
 often in vendor-packaged Perl versions).
@@ -65,9 +65,17 @@ your L<Module::Install>-based F<Makefile.PL> (or equivalent).
 
   requires 'Task::Weaken' => 0;
 
+=head1 SUPPORT
+
+Bugs should be always be reported via the CPAN bug tracker at
+
+L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-Weaken>
+
+For other issues,contact the author.
+
 =head1 AUTHOR
 
-Adam Kennedy E<lt>adamk@cpan.orgE<gt>, L<http://ali.as/>
+Adam Kennedy E<lt>adamk@cpan.orgE<gt>
 
 =head1 SEE ALSO
 
@@ -75,7 +83,7 @@ L<Task>, L<Scalar::Util>, L<http://ali.as/>
 
 =head1 COPYRIGHT
 
-Copyright 2006 - 2009 Adam Kennedy.
+Copyright 2006 - 2011 Adam Kennedy.
 
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
