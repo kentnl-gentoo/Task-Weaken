@@ -39,7 +39,7 @@
 #
 # Adam K
 
-use inc::Module::Install 1.00;
+use lib q[.]; use inc::Module::Install 1.00;
 
 all_from      'lib/Task/Weaken.pm';
 test_requires 'Test::More' => '0.42';
