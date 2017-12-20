@@ -123,7 +123,7 @@ sub message1 {
 	print "    ERROR:\n\n";
 	print "    A CPAN module critically requires a function\n";
 	print "    (Scalar::Util::weaken) that can only be provided by\n";
-	print "    upgrading your Scalar::Util module to a bew version,\n";
+	print "    upgrading your Scalar::Util module to a new version,\n";
 	print "    which will need a C compiler in order to install.\n\n";
 	print "    Unfortunately, I can't seem to locate a C compiler on this\n";
 	print "    computer.\n\n";

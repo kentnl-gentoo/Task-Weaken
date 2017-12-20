@@ -23,7 +23,7 @@ Task::Weaken - Ensure that a platform has weaken support
 One recurring problem in modules that use L<Scalar::Util>'s C<weaken>
 function is that it is not present in the pure-perl variant.
 
-While this isn't necesarily always a problem in a straight CPAN-based
+While this isn't necessarily always a problem in a straight CPAN-based
 Perl environment, some operating system distributions only include the
 pure-Perl versions, don't include the XS version, and so weaken is
 then "missing" from the platform, B<despite> passing a dependency on
