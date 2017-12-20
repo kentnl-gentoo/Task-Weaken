@@ -1,5 +1,7 @@
-Chanbges for Perl extension Task-Weaken
+Revision history for Task-Weaken
 
+{{$NEXT}}
+        - switch packaging to Dist::Zilla
         - Require List::Util::XS in some cases (unreleased commit from 2012,
           Alexandr Ciornii)
 

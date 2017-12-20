@@ -1,0 +1,6 @@
+/.ackrc
+/.build/
+!/.gitignore
+/.latest
+/Task-Weaken-*/
+/Task-Weaken-*.tar.gz
