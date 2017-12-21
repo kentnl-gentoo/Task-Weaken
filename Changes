@@ -1,6 +1,6 @@
 Revision history for Task-Weaken
 
-{{$NEXT}}
+1.05      2017-12-21 01:10:56Z
         - switch packaging to Dist::Zilla
         - Require List::Util::XS in some cases (unreleased commit from 2012,
           Alexandr Ciornii)
